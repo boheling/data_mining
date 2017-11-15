@@ -1,0 +1,38 @@
+Revision history for Perl extension AI::NaiveBayes1.
+
+0.01  Fri May  9 14:48:53 ADT 2003
+	- original version;
+
+0.02  Fri May  9 15:53:53 ADT 2003
+	- bug fix
+
+0.03  Wed Sep  3 08:25:43 ADT 2003
+	- bug fix
+	- import and export to/from string and file (using YAML)
+
+1.0   Thu Sep  4 08:01:19 ADT 2003
+        - bug fix in testing (attributes and labels are sorted now in
+  	  print_model)
+
+1.1   Tue Apr 20 08:07:33 ADT 2004
+	- added several more test
+        - implemented optional Gaussian distribution for numerical
+	  attributes
+
+1.2   Mon Mar 14 08:03:16 AST 2005
+	- addition to documentation
+	- fixing a minor bug and a warning
+
+1.3   Fri Dec  7 07:26:47 AST 2007
+	- added reading from a table format (add_table)
+	- fixed some warnings reported during testing
+	- added option "with counts" to print_model
+	- added smoothing option for attributes
+
+1.4   Fri Dec 14 11:42:16 AST 2007
+	- added test skipping if YAML module is not available
+	- removing deprecated "our" reserved word
+
+1.5   Wed Jan 30 08:06:22 AST 2008
+	- fixed testing problems due to differences in the lowest
+	  significant digit on different platforms

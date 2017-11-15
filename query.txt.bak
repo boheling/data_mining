@@ -1,0 +1,5 @@
+SELECT * FROM rating r, item i, occupation o, user u
+where i.item_id=r.item_id                           
+and u.user_id=r.user_id                             
+and u.occupation=o.occ_id                           
+order by id;                                        

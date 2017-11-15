@@ -1,0 +1,17 @@
+SELECT * FROM rating r, item i, occupation o, user u
+where i.item_id=r.item_id
+and u.user_id=r.user_id
+and u.occupation=o.occ_id
+order by id;
+
+SELECT rating,    release_date,       IMDb_URL, _unknown,   _Action,   Adventure,
+        Animation, Children,   Comedy,    Crime,    Documentary,
+        Drama,     Fantasy,    Film_Noir, Horror,   Musical,
+        Mystery,   Romance,    Sci_Fi,    Thriller, War,
+        Western,   u.occupation, age,       gender,   zip_code FROM rating r, item i, occupation o, user u
+where i.item_id=r.item_id
+and u.user_id=r.user_id
+and u.occupation=o.occ_id
+order by id
+DESC
+limit 78000;
